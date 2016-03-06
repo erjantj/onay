@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="dist/css/style.min.css">
+        <title>Onay balance</title>
+    </head>
+    <body>
+        <div class="content">
+			<img src="dist/images/site-logo.png" class="content__logo">
+			<div class="content__info">
+				<p class="content__info__text js-info-text">
+					Чтобы узнать баланс карты<br> добавьте изображение <br>билета.
+				</p>
+				<p class="content__info__ticket-number js-ticket-number">9643108503302362415</p>
+				<p class="content__info__ticket-balance js-ticket-balance"></p>
+
+			</div>
+
+			<div class="content__add-ticket">
+				<button class="content__add-ticket__balance js-get-ticket-balance">Узнать баланс</button>
+				<button class="content__add-ticket__button js-add-ticket-button">Добавить билет</button>
+				<img src="dist/images/loading.gif" class="content__loading js-loading-icon">
+			</div>
+		</div>
+
+        <script type="text/javascript" src="cordova.js"></script>
+		<script type="text/javascript" src="src/js/jquery.min.js"></script>
+        <script type="text/javascript" src="src/js/JOB.js"></script>
+        <script type="text/javascript" src="src/js/onay.js"></script>
+        <script type="text/javascript" src="src/js/main.js"></script>
+    </body>
+</html>

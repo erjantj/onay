@@ -1,0 +1,121 @@
+body {
+    font: normal 14px/20px Helvetica Neue,Helvetica,Arial,sans-serif;
+    background-color: #fdbd36
+}
+
+.content {
+    max-width: 400px;
+    width: 300px;
+    height: 500px;
+    margin: 0 auto;
+    text-align: center;
+    overflow: hidden
+}
+
+.content__logo{
+    width: 150px;
+}
+.content__add-ticket {
+    width: 230px;
+    overflow: hidden;
+    margin-top: 10px;
+    position: absolute;
+    left: 50%;
+    margin-left: -110px
+}
+
+.content__add-ticket__balance {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid #000;
+    background-color: #fdbd36;
+    cursor: pointer;
+    font-size: 16px;
+    outline: none;
+    color: #fff;
+    background-color: #333;
+    opacity: 0;
+    transition: .5s ease-out
+}
+
+.content__add-ticket__balance--visible {
+    opacity: .7
+}
+
+.content__add-ticket__balance--visible:hover {
+    opacity: 1
+}
+
+.content__add-ticket__button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid #000;
+    background-color: #fdbd36;
+    cursor: pointer;
+    font-size: 14px;
+    outline: none;
+    margin-top: 10px
+}
+
+.content__info {
+    overflow: hidden;
+    height: 150px;
+    text-align: center;
+    position: relative
+}
+
+.content__info__text {
+    font-size: 16px;
+    position: absolute;
+    top: 20px;
+    width: 100%
+}
+
+.content__info__ticket-number {
+    position: relative;
+    font-size: 26px;
+    top: 100px;
+    opacity: 0;
+    line-height: 1.4;
+    transition: .5s ease-out
+}
+
+.content__info__ticket-number--visible {
+    opacity: 1;
+    -webkit-transform: translateY(-70px);
+    transform: translateY(-70px)
+}
+
+.content__info__ticket-balance {
+    position: relative;
+    font-size: 16px;
+    top: 100px;
+    opacity: 0;
+    line-height: 1.4;
+    transition: .5s ease-out
+}
+
+.content__info__ticket-balance--visible {
+    opacity: 1;
+    -webkit-transform: translateY(-80px);
+    transform: translateY(-80px)
+}
+
+.content__add-ticket__file {
+    display: none
+}
+
+.content__loading {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    left: 50%;
+    margin-left: -15px;
+    margin-top: 15px;
+    clear: both;
+    visibility: hidden
+}
+
+.content__loading--visible {
+    visibility: visible
+}
