@@ -1,37 +1,33 @@
 <!DOCTYPE html>
+<meta charset=utf-8>
+<html lang="ru">
+<head>
+	<title>Onay balance</title>
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" type="text/css" href="dist/css/style.min.css?v=4">
+</head>
+<body>
+	<div class="content">
+		<img src="dist/images/site-logo.png" class="content__logo">
+		<div class="content__info">
+			<p class="content__info__text js-info-text">
+				Чтобы узнать баланс карты<br> добавьте изображение <br>билета.
+			</p>	
+			<p class="content__info__ticket-number js-ticket-number">9643108503302362415</p>
+			<p class="content__info__ticket-balance js-ticket-balance"></p>
 
-<html>
-    <head>
-        <meta charset="utf-8" />
-        <meta name="format-detection" content="telephone=no" />
-        <meta name="msapplication-tap-highlight" content="no" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=0" />
-        <link rel="stylesheet" type="text/css" href="dist/css/style.min.css">
-        <title>Onay balance</title>
-    </head>
-    <body>
-        <div class="content">
-			<img src="dist/images/site-logo.png" class="content__logo">
-			<div class="content__info">
-				<p class="content__info__text js-info-text">
-					Чтобы узнать баланс карты<br> добавьте изображение <br>билета.
-				</p>
-				<p class="content__info__ticket-number js-ticket-number">9643108503302362415</p>
-				<p class="content__info__ticket-balance js-ticket-balance"></p>
-
-			</div>
-
-			<div class="content__add-ticket">
-				<button class="content__add-ticket__balance js-get-ticket-balance">Узнать баланс</button>
-				<button class="content__add-ticket__button js-add-ticket-button">Добавить билет</button>
-				<img src="dist/images/loading.gif" class="content__loading js-loading-icon">
-			</div>
 		</div>
+		
+		<div class="content__add-ticket">
+			<button class="content__add-ticket__balance js-get-ticket-balance">Узнать баланс</button>
+			<button class="content__add-ticket__button js-add-ticket-button">Добавить билет</button>
+			<img src="dist/images/loading.gif" class="content__loading js-loading-icon">
 
-        <script type="text/javascript" src="cordova.js"></script>
-		<script type="text/javascript" src="src/js/jquery.min.js"></script>
-        <script type="text/javascript" src="src/js/JOB.js"></script>
-        <script type="text/javascript" src="src/js/onay.js"></script>
-        <script type="text/javascript" src="src/js/main.js"></script>
-    </body>
+			<input class="content__add-ticket__file js-add-ticket-file" type="file" accept="image/*;capture=camera" />
+		</div>  
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script type="text/javascript" src="dist/js/scripts.min.js?v=6"></script>
+</body>
 </html>
